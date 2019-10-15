@@ -20,20 +20,33 @@
 </head>
 
 <body>
-    <header class="">
-        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-            <h5 class="my-0 mr-md-auto font-weight-bold">RFHealth</h5>
-            <nav class="my-2 my-md-0 mr-md-3">
-                <a class="p-2 text-dark" href="#">Features</a>
-                <a class="p-2 text-dark" href="#">Enterprise</a>
-                <a class="p-2 text-dark" href="#">Support</a>
-                <a class="p-2 text-dark" href="#">Pricing</a>
-            </nav>
-            <a class="btn btn-outline-primary" href="#">Sign up</a>
-        </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <a class="navbar-brand text-dark" href="PáginaPrincipalUsuario.html">
+                <h5 class="my-0 mr-md-auto font-weight-bold">RFHealth</h5>
+            </a>
+
+            <a href="#navbarSupportedContent">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-dark ml-2" href="EstadisticasUsuario.html">Estadísticas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark ml-2" href="Registro.html">Registro</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <div class="col-md-8 order-md-1 container">
-        <h4 class="mb-3">Registro</h4>
+        <h4 class="mb-3 mt-4">Registro</h4>
         <form class="needs-validation" novalidate="">
             <div class="row">
                 <div class="col-md-4 mb-3">
@@ -91,7 +104,8 @@
             <span class="mb-3">Género</span>
             <div class="d-block my-3">
                 <div class="custom-control custom-radio">
-                    <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                    <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked=""
+                        required="">
                     <label class="custom-control-label" for="credit">Masculino</label>
                 </div>
                 <div class="custom-control custom-radio">
